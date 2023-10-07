@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Monitor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url('hospital-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #f1c215;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-image : url('');
+            background-color: #333;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(18, 225, 115);
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0074e4;
+        }
+
+        .hero {
+            background-image: url('hospital-image.jpg');
+            background-size: cover;
+            text-align: center;
+            padding: 100px 0;
+            color: rgb(20, 170, 235);
+            position: relative;
+        }
+
+.cta {
+ position: relative;
+ margin: auto;
+ padding: 12px 18px;
+ transition: all 0.2s ease;
+ border: none;
+ background: none;
+}
+
+.cta:before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ border-radius: 50px;
+ background: #b1dae7;
+ width: 45px;
+ height: 45px;
+ transition: all 0.3s ease;
+}
+
+.cta span {
+ position: relative;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ color: #234567;
+}
+
+.cta svg {
+ position: relative;
+ top: 0;
+ margin-left: 10px;
+ fill: none;
+ stroke-linecap: round;
+ stroke-linejoin: round;
+ stroke: #234567;
+ stroke-width: 2;
+ transform: translateX(-5px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+ width: 100%;
+ background: #b1dae7;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active {
+ transform: scale(0.95);
+}
+
+        .info {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .info p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white py-4 text-center">
+        <h1 class="text-3xl">Healthcare Services</h1>
+        <p class="text-lg">Your Health, Our Priority</p>
+    </header>
+    
+    <nav class="bg-gray-800 text-white py-2">
+        <ul class="flex justify-center space-x-6">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500">Doctors</a></li>
+            <li><a href="#" class="hover:text-blue-500">Appointments</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero bg-cover bg-center py-20 text-white text-center">
+        <h2 class="text-4xl lobster mb-4">DiabeTech Nexus</h2>
+        <p class="text-lg mb-6">We are committed to providing the best medical care to our patients.</p>
+        <button class="cta">
+             <a href="surveyformsdesign.html" class="cta"></a>
+            <span>Survey</span>
+            <svg viewBox="0 0 13 10" height="10px" width="20px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        <div class="animated-heart"></div>
+    </section>
+
+    <section class="info bg-white shadow-md rounded-lg p-6 my-8 mx-4">
+        <h2 class="text-2xl font-semibold">About Sugar Monitoring</h2>
+        <p class="mt-4">
+            Sugar monitoring is essential for maintaining a healthy lifestyle. It helps you understand your sugar intake and make informed decisions about your diet.
+            Monitoring your sugar intake can prevent various health issues, including diabetes and obesity.
+        </p>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2023 Hospital Website</p>
+    </footer>
+
+    <script>
+        // Add subtle heart animation
+        const heart = document.querySelector(".animated-heart");
+        if (heart) {
+            heart.innerHTML = "&hearts;";
+            heart.style.animation = "float 2s infinite";
+        }
+    </script>
+</body>
+</html>
